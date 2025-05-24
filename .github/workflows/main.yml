@@ -18,27 +18,47 @@ jobs:
           distribution: 'temurin'
           java-version: '21'
 
+      - name: Install Playwright browser dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            libgtk-4-1 \
+            libgraphene-1.0-0 \
+            libwoff1 \
+            libvpx9 \
+            libevent-2.1-7 \
+            libopus0 \
+            libgstreamer1.0-0 \
+            libgstreamer-plugins-base1.0-0 \
+            libflite1 \
+            libavif16 \
+            libharfbuzz-icu0 \
+            libsecret-1-0 \
+            libhyphen0 \
+            libmanette-0.2-0 \
+            libgles2 \
+            libx264-dev
+
       - name: Run Maven tests and capture output
         id: run_tests
         run: |
           set +e
           mvn test -DsuiteXmlFile=suite/DcmAdminEnums.xml -DtestFailureIgnore=false | tee mvn-output.txt
-          exit_code=${PIPESTATUS[0]}
-          echo "exit_code=$exit_code" >> $GITHUB_OUTPUT
+          echo "exit_code=${PIPESTATUS[0]}" >> $GITHUB_OUTPUT
           set -e
 
       - name: Extract test error line (if any)
         id: extract_error
         run: |
           error_line=$(grep -i "Error:  Tests run:" mvn-output.txt || echo "")
-          echo "error_line=$error_line" >> $GITHUB_OUTPUT
+          echo "error_line=${error_line}" >> $GITHUB_OUTPUT
 
       - name: Send message to Google Chat
         run: |
           if [ "${{ steps.run_tests.outputs.exit_code }}" -eq 0 ]; then
             message="✅ Maven tests passed successfully in ${{ github.repository }} on branch ${{ github.ref_name }}."
           else
-            message="❌ Maven tests failed in ${{ github.repository }} on branch ${{ github.ref_name }}. \nError Summary: ${{ steps.extract_error.outputs.error_line }}"
+            message="❌ Maven tests failed in ${{ github.repository }} on branch ${{ github.ref_name }}.\nError Summary: ${{ steps.extract_error.outputs.error_line }}"
           fi
 
           curl -X POST \
