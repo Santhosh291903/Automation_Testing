@@ -1,4 +1,4 @@
-name: Run Maven Tests
+name: Run Maven Tests and Notify Google Chat
 
 on:
   push:
@@ -19,19 +19,29 @@ jobs:
           java-version: '17'
 
       - name: Run Maven tests and capture output
+        id: run_tests
         run: |
+          set +e
           mvn test | tee mvn-output.txt
+          exit_code=${PIPESTATUS[0]}
+          echo "exit_code=$exit_code" >> $GITHUB_OUTPUT
+          set -e
 
-      - name: Extract test failure line
+      - name: Extract test error line (if any)
         id: extract_error
         run: |
-          error_line=$(grep -i "Error:  Tests run:" mvn-output.txt || echo "No test error found")
+          error_line=$(grep -i "Error:  Tests run:" mvn-output.txt || echo "")
           echo "error_line=$error_line" >> $GITHUB_OUTPUT
 
-      - name: Send to Google Chat
-        if: ${{ steps.extract_error.outputs.error_line != 'No test error found' }}
+      - name: Send message to Google Chat
         run: |
+          if [ "${{ steps.run_tests.outputs.exit_code }}" -eq 0 ]; then
+            message="✅ Maven tests passed successfully in ${{ github.repository }} on branch ${{ github.ref_name }}."
+          else
+            message="❌ Maven tests failed in ${{ github.repository }} on branch ${{ github.ref_name }}. \nError Summary: ${{ steps.extract_error.outputs.error_line }}"
+          fi
+
           curl -X POST \
             -H 'Content-Type: application/json' \
-            -d "{\"text\": \"${{ steps.extract_error.outputs.error_line }}\"}" \
+            -d "{\"text\": \"$message\"}" \
             "https://chat.googleapis.com/v1/spaces/AAAA0q_7a84/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=2sgTj39blKJrS_pAKTiHPxXi08Z-LG0lHmma4I"
