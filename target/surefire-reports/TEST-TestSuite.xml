@@ -1,0 +1,1133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="6.337" tests="69" errors="0" skipped="68" failures="1">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="browser.type" value="Google Chrome"/>
+    <property name="webdriver.chrome.driver" value="/home/icanio-10155/.cache/selenium/chromedriver/linux64/114.0.5735.90/chromedriver"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/home/icanio-10155/app/DCM/Automation-Practice/target/test-classes:/home/icanio-10155/app/DCM/Automation-Practice/target/classes:/home/icanio-10155/.m2/repository/org/seleniumhq/selenium/selenium-java/4.5.3/selenium-java-4.5.3.jar:/home/icanio-10155/.m2/repository/org/seleniumhq/selenium/selenium-api/4.5.3/selenium-api-4.5.3.jar:/home/icanio-10155/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.5.3/selenium-chrome-driver-4.5.3.jar:/home/icanio-10155/.m2/repository/com/google/auto/service/auto-service-annotations/1.0.1/auto-service-annotations-1.0.1.jar:/home/icanio-10155/.m2/repository/com/google/auto/service/auto-service/1.0.1/auto-service-1.0.1.jar:/home/icanio-10155/.m2/repository/com/google/auto/auto-common/1.2/auto-common-1.2.jar:/home/icanio-10155/.m2/repository/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar:/home/icanio-10155/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/home/icanio-10155/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/home/icanio-10155/.m2/repository/org/checkerframework/checker-qual/3.12.0/checker-qual-3.12.0.jar:/home/icanio-10155/.m2/repository/com/google/errorprone/error_prone_annotations/2.11.0/error_prone_annotations-2.11.0.jar:/home/icanio-10155/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/home/icanio-10155/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.5.3/selenium-chromium-driver-4.5.3.jar:/home/icanio-10155/.m2/repository/org/seleniumhq/selenium/selenium-json/4.5.3/selenium-json-4.5.3.jar:/home/icanio-10155/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v104/4.5.3/selenium-devtools-v104-4.5.3.jar:/home/icanio-10155/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v105/4.5.3/selenium-devtools-v105-4.5.3.jar:/home/icanio-10155/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v106/4.5.3/selenium-devtools-v106-4.5.3.jar:/home/icanio-10155/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.5.3/selenium-devtools-v85-4.5.3.jar:/home/icanio-10155/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.5.3/selenium-edge-driver-4.5.3.jar:/home/icanio-10155/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.5.3/selenium-firefox-driver-4.5.3.jar:/home/icanio-10155/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.5.3/selenium-ie-driver-4.5.3.jar:/home/icanio-10155/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.5.3/selenium-remote-driver-4.5.3.jar:/home/icanio-10155/.m2/repository/io/netty/netty-buffer/4.1.84.Final/netty-buffer-4.1.84.Final.jar:/home/icanio-10155/.m2/repository/io/netty/netty-codec-http/4.1.84.Final/netty-codec-http-4.1.84.Final.jar:/home/icanio-10155/.m2/repository/io/netty/netty-codec/4.1.84.Final/netty-codec-4.1.84.Final.jar:/home/icanio-10155/.m2/repository/io/netty/netty-handler/4.1.84.Final/netty-handler-4.1.84.Final.jar:/home/icanio-10155/.m2/repository/io/netty/netty-common/4.1.84.Final/netty-common-4.1.84.Final.jar:/home/icanio-10155/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.84.Final/netty-transport-classes-epoll-4.1.84.Final.jar:/home/icanio-10155/.m2/repository/io/netty/netty-transport-classes-kqueue/4.1.84.Final/netty-transport-classes-kqueue-4.1.84.Final.jar:/home/icanio-10155/.m2/repository/io/netty/netty-transport-native-epoll/4.1.84.Final/netty-transport-native-epoll-4.1.84.Final.jar:/home/icanio-10155/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.84.Final/netty-transport-native-kqueue-4.1.84.Final.jar:/home/icanio-10155/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.84.Final/netty-transport-native-unix-common-4.1.84.Final.jar:/home/icanio-10155/.m2/repository/io/netty/netty-transport/4.1.84.Final/netty-transport-4.1.84.Final.jar:/home/icanio-10155/.m2/repository/io/netty/netty-resolver/4.1.84.Final/netty-resolver-4.1.84.Final.jar:/home/icanio-10155/.m2/repository/io/opentelemetry/opentelemetry-api/1.19.0/opentelemetry-api-1.19.0.jar:/home/icanio-10155/.m2/repository/io/opentelemetry/opentelemetry-context/1.19.0/opentelemetry-context-1.19.0.jar:/home/icanio-10155/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.19.0/opentelemetry-exporter-logging-1.19.0.jar:/home/icanio-10155/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.19.0/opentelemetry-sdk-metrics-1.19.0.jar:/home/icanio-10155/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.19.0-alpha/opentelemetry-sdk-logs-1.19.0-alpha.jar:/home/icanio-10155/.m2/repository/io/opentelemetry/opentelemetry-api-logs/1.19.0-alpha/opentelemetry-api-logs-1.19.0-alpha.jar:/home/icanio-10155/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.19.0/opentelemetry-sdk-common-1.19.0.jar:/home/icanio-10155/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.19.0/opentelemetry-sdk-extension-autoconfigure-spi-1.19.0.jar:/home/icanio-10155/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.19.0-alpha/opentelemetry-sdk-extension-autoconfigure-1.19.0-alpha.jar:/home/icanio-10155/.m2/repository/io/opentelemetry/opentelemetry-exporter-common/1.19.0/opentelemetry-exporter-common-1.19.0.jar:/home/icanio-10155/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.19.0/opentelemetry-sdk-trace-1.19.0.jar:/home/icanio-10155/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.19.0/opentelemetry-sdk-1.19.0.jar:/home/icanio-10155/.m2/repository/io/opentelemetry/opentelemetry-semconv/1.19.0-alpha/opentelemetry-semconv-1.19.0-alpha.jar:/home/icanio-10155/.m2/repository/io/ous/jtoml/2.0.0/jtoml-2.0.0.jar:/home/icanio-10155/.m2/repository/net/bytebuddy/byte-buddy/1.12.18/byte-buddy-1.12.18.jar:/home/icanio-10155/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/home/icanio-10155/.m2/repository/org/asynchttpclient/async-http-client/2.12.3/async-http-client-2.12.3.jar:/home/icanio-10155/.m2/repository/org/asynchttpclient/async-http-client-netty-utils/2.12.3/async-http-client-netty-utils-2.12.3.jar:/home/icanio-10155/.m2/repository/io/netty/netty-codec-socks/4.1.60.Final/netty-codec-socks-4.1.60.Final.jar:/home/icanio-10155/.m2/repository/io/netty/netty-handler-proxy/4.1.60.Final/netty-handler-proxy-4.1.60.Final.jar:/home/icanio-10155/.m2/repository/io/netty/netty-transport-native-epoll/4.1.60.Final/netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar:/home/icanio-10155/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.60.Final/netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar:/home/icanio-10155/.m2/repository/com/typesafe/netty/netty-reactive-streams/2.0.4/netty-reactive-streams-2.0.4.jar:/home/icanio-10155/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/home/icanio-10155/.m2/repository/org/seleniumhq/selenium/selenium-http/4.5.3/selenium-http-4.5.3.jar:/home/icanio-10155/.m2/repository/dev/failsafe/failsafe/3.3.0/failsafe-3.3.0.jar:/home/icanio-10155/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.5.3/selenium-safari-driver-4.5.3.jar:/home/icanio-10155/.m2/repository/org/seleniumhq/selenium/selenium-support/4.5.3/selenium-support-4.5.3.jar:/home/icanio-10155/.m2/repository/io/github/bonigarcia/webdrivermanager/5.3.0/webdrivermanager-5.3.0.jar:/home/icanio-10155/.m2/repository/com/google/code/gson/gson/2.9.1/gson-2.9.1.jar:/home/icanio-10155/.m2/repository/com/github/docker-java/docker-java/3.2.13/docker-java-3.2.13.jar:/home/icanio-10155/.m2/repository/com/github/docker-java/docker-java-core/3.2.13/docker-java-core-3.2.13.jar:/home/icanio-10155/.m2/repository/com/github/docker-java/docker-java-api/3.2.13/docker-java-api-3.2.13.jar:/home/icanio-10155/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.10.3/jackson-annotations-2.10.3.jar:/home/icanio-10155/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.10.3/jackson-databind-2.10.3.jar:/home/icanio-10155/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.10.3/jackson-core-2.10.3.jar:/home/icanio-10155/.m2/repository/org/bouncycastle/bcpkix-jdk15on/1.64/bcpkix-jdk15on-1.64.jar:/home/icanio-10155/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.64/bcprov-jdk15on-1.64.jar:/home/icanio-10155/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/home/icanio-10155/.m2/repository/com/github/docker-java/docker-java-transport-httpclient5/3.2.13/docker-java-transport-httpclient5-3.2.13.jar:/home/icanio-10155/.m2/repository/com/github/docker-java/docker-java-transport/3.2.13/docker-java-transport-3.2.13.jar:/home/icanio-10155/.m2/repository/net/java/dev/jna/jna/5.8.0/jna-5.8.0.jar:/home/icanio-10155/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/home/icanio-10155/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/home/icanio-10155/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.1.3/httpclient5-5.1.3.jar:/home/icanio-10155/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.1.3/httpcore5-5.1.3.jar:/home/icanio-10155/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.1.3/httpcore5-h2-5.1.3.jar:/home/icanio-10155/.m2/repository/commons-codec/commons-codec/1.15/commons-codec-1.15.jar:/home/icanio-10155/.m2/repository/org/testng/testng/7.6.1/testng-7.6.1.jar:/home/icanio-10155/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/home/icanio-10155/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/home/icanio-10155/.m2/repository/org/webjars/jquery/3.6.0/jquery-3.6.0.jar:/home/icanio-10155/.m2/repository/io/rest-assured/rest-assured/5.2.0/rest-assured-5.2.0.jar:/home/icanio-10155/.m2/repository/org/apache/groovy/groovy/4.0.1/groovy-4.0.1.jar:/home/icanio-10155/.m2/repository/org/apache/groovy/groovy-xml/4.0.1/groovy-xml-4.0.1.jar:/home/icanio-10155/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/home/icanio-10155/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/home/icanio-10155/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/icanio-10155/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/home/icanio-10155/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/home/icanio-10155/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/home/icanio-10155/.m2/repository/io/rest-assured/json-path/5.2.0/json-path-5.2.0.jar:/home/icanio-10155/.m2/repository/org/apache/groovy/groovy-json/4.0.1/groovy-json-4.0.1.jar:/home/icanio-10155/.m2/repository/io/rest-assured/rest-assured-common/5.2.0/rest-assured-common-5.2.0.jar:/home/icanio-10155/.m2/repository/io/rest-assured/xml-path/5.2.0/xml-path-5.2.0.jar:/home/icanio-10155/.m2/repository/com/jayway/jsonpath/json-path/2.7.0/json-path-2.7.0.jar:/home/icanio-10155/.m2/repository/net/minidev/json-smart/2.4.7/json-smart-2.4.7.jar:/home/icanio-10155/.m2/repository/net/minidev/accessors-smart/2.4.7/accessors-smart-2.4.7.jar:/home/icanio-10155/.m2/repository/org/ow2/asm/asm/9.1/asm-9.1.jar:/home/icanio-10155/.m2/repository/org/apache/poi/poi-ooxml/5.2.3/poi-ooxml-5.2.3.jar:/home/icanio-10155/.m2/repository/org/apache/poi/poi/5.2.3/poi-5.2.3.jar:/home/icanio-10155/.m2/repository/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar:/home/icanio-10155/.m2/repository/com/zaxxer/SparseBitSet/1.2/SparseBitSet-1.2.jar:/home/icanio-10155/.m2/repository/org/apache/poi/poi-ooxml-lite/5.2.3/poi-ooxml-lite-5.2.3.jar:/home/icanio-10155/.m2/repository/org/apache/xmlbeans/xmlbeans/5.1.1/xmlbeans-5.1.1.jar:/home/icanio-10155/.m2/repository/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar:/home/icanio-10155/.m2/repository/com/github/virtuald/curvesapi/1.07/curvesapi-1.07.jar:/home/icanio-10155/.m2/repository/org/apache/logging/log4j/log4j-api/2.18.0/log4j-api-2.18.0.jar:/home/icanio-10155/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/home/icanio-10155/.m2/repository/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar:/home/icanio-10155/.m2/repository/io/qameta/allure/allure-testng/2.19.0/allure-testng-2.19.0.jar:/home/icanio-10155/.m2/repository/io/qameta/allure/allure-java-commons/2.19.0/allure-java-commons-2.19.0.jar:/home/icanio-10155/.m2/repository/io/qameta/allure/allure-model/2.19.0/allure-model-2.19.0.jar:/home/icanio-10155/.m2/repository/io/qameta/allure/allure-test-filter/2.19.0/allure-test-filter-2.19.0.jar:/home/icanio-10155/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar:/home/icanio-10155/.m2/repository/io/reactivex/rxjava3/rxjava/3.0.4/rxjava-3.0.4.jar:/home/icanio-10155/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/home/icanio-10155/.m2/repository/org/freemarker/freemarker/2.3.30/freemarker-2.3.30.jar:/home/icanio-10155/.m2/repository/org/aspectj/aspectjweaver/1.9.9.1/aspectjweaver-1.9.9.1.jar:/home/icanio-10155/.m2/repository/org/slf4j/slf4j-api/2.0.3/slf4j-api-2.0.3.jar:/home/icanio-10155/.m2/repository/org/slf4j/slf4j-simple/2.0.3/slf4j-simple-2.0.3.jar:/home/icanio-10155/.m2/repository/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar:/home/icanio-10155/.m2/repository/org/projectlombok/lombok/1.18.24/lombok-1.18.24.jar:"/>
+    <property name="java.vm.vendor" value="Ubuntu"/>
+    <property name="defaultAdminUserPassword" value="demoadmin"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="maximize" value="true"/>
+    <property name="java.vendor.url" value="https://ubuntu.com/"/>
+    <property name="user.timezone" value="Asia/Kolkata"/>
+    <property name="os.name" value="Linux"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="allure.link.issue.pattern" value="https://en.wikipedia.org/wiki/{}"/>
+    <property name="height" value="768"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-17-openjdk-amd64/lib"/>
+    <property name="sun.java.command" value="/home/icanio-10155/app/DCM/Automation-Practice/target/surefire/surefirebooter-20250524115342363_3.jar /home/icanio-10155/app/DCM/Automation-Practice/target/surefire 2025-05-24T11-53-41_622-jvmRun1 surefire-20250524115342363_1tmp surefire_0-20250524115342363_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/home/icanio-10155/app/DCM/Automation-Practice/target/test-classes:/home/icanio-10155/app/DCM/Automation-Practice/target/classes:/home/icanio-10155/.m2/repository/org/seleniumhq/selenium/selenium-java/4.5.3/selenium-java-4.5.3.jar:/home/icanio-10155/.m2/repository/org/seleniumhq/selenium/selenium-api/4.5.3/selenium-api-4.5.3.jar:/home/icanio-10155/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.5.3/selenium-chrome-driver-4.5.3.jar:/home/icanio-10155/.m2/repository/com/google/auto/service/auto-service-annotations/1.0.1/auto-service-annotations-1.0.1.jar:/home/icanio-10155/.m2/repository/com/google/auto/service/auto-service/1.0.1/auto-service-1.0.1.jar:/home/icanio-10155/.m2/repository/com/google/auto/auto-common/1.2/auto-common-1.2.jar:/home/icanio-10155/.m2/repository/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar:/home/icanio-10155/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/home/icanio-10155/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/home/icanio-10155/.m2/repository/org/checkerframework/checker-qual/3.12.0/checker-qual-3.12.0.jar:/home/icanio-10155/.m2/repository/com/google/errorprone/error_prone_annotations/2.11.0/error_prone_annotations-2.11.0.jar:/home/icanio-10155/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/home/icanio-10155/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.5.3/selenium-chromium-driver-4.5.3.jar:/home/icanio-10155/.m2/repository/org/seleniumhq/selenium/selenium-json/4.5.3/selenium-json-4.5.3.jar:/home/icanio-10155/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v104/4.5.3/selenium-devtools-v104-4.5.3.jar:/home/icanio-10155/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v105/4.5.3/selenium-devtools-v105-4.5.3.jar:/home/icanio-10155/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v106/4.5.3/selenium-devtools-v106-4.5.3.jar:/home/icanio-10155/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.5.3/selenium-devtools-v85-4.5.3.jar:/home/icanio-10155/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.5.3/selenium-edge-driver-4.5.3.jar:/home/icanio-10155/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.5.3/selenium-firefox-driver-4.5.3.jar:/home/icanio-10155/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.5.3/selenium-ie-driver-4.5.3.jar:/home/icanio-10155/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.5.3/selenium-remote-driver-4.5.3.jar:/home/icanio-10155/.m2/repository/io/netty/netty-buffer/4.1.84.Final/netty-buffer-4.1.84.Final.jar:/home/icanio-10155/.m2/repository/io/netty/netty-codec-http/4.1.84.Final/netty-codec-http-4.1.84.Final.jar:/home/icanio-10155/.m2/repository/io/netty/netty-codec/4.1.84.Final/netty-codec-4.1.84.Final.jar:/home/icanio-10155/.m2/repository/io/netty/netty-handler/4.1.84.Final/netty-handler-4.1.84.Final.jar:/home/icanio-10155/.m2/repository/io/netty/netty-common/4.1.84.Final/netty-common-4.1.84.Final.jar:/home/icanio-10155/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.84.Final/netty-transport-classes-epoll-4.1.84.Final.jar:/home/icanio-10155/.m2/repository/io/netty/netty-transport-classes-kqueue/4.1.84.Final/netty-transport-classes-kqueue-4.1.84.Final.jar:/home/icanio-10155/.m2/repository/io/netty/netty-transport-native-epoll/4.1.84.Final/netty-transport-native-epoll-4.1.84.Final.jar:/home/icanio-10155/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.84.Final/netty-transport-native-kqueue-4.1.84.Final.jar:/home/icanio-10155/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.84.Final/netty-transport-native-unix-common-4.1.84.Final.jar:/home/icanio-10155/.m2/repository/io/netty/netty-transport/4.1.84.Final/netty-transport-4.1.84.Final.jar:/home/icanio-10155/.m2/repository/io/netty/netty-resolver/4.1.84.Final/netty-resolver-4.1.84.Final.jar:/home/icanio-10155/.m2/repository/io/opentelemetry/opentelemetry-api/1.19.0/opentelemetry-api-1.19.0.jar:/home/icanio-10155/.m2/repository/io/opentelemetry/opentelemetry-context/1.19.0/opentelemetry-context-1.19.0.jar:/home/icanio-10155/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.19.0/opentelemetry-exporter-logging-1.19.0.jar:/home/icanio-10155/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.19.0/opentelemetry-sdk-metrics-1.19.0.jar:/home/icanio-10155/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.19.0-alpha/opentelemetry-sdk-logs-1.19.0-alpha.jar:/home/icanio-10155/.m2/repository/io/opentelemetry/opentelemetry-api-logs/1.19.0-alpha/opentelemetry-api-logs-1.19.0-alpha.jar:/home/icanio-10155/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.19.0/opentelemetry-sdk-common-1.19.0.jar:/home/icanio-10155/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.19.0/opentelemetry-sdk-extension-autoconfigure-spi-1.19.0.jar:/home/icanio-10155/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.19.0-alpha/opentelemetry-sdk-extension-autoconfigure-1.19.0-alpha.jar:/home/icanio-10155/.m2/repository/io/opentelemetry/opentelemetry-exporter-common/1.19.0/opentelemetry-exporter-common-1.19.0.jar:/home/icanio-10155/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.19.0/opentelemetry-sdk-trace-1.19.0.jar:/home/icanio-10155/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.19.0/opentelemetry-sdk-1.19.0.jar:/home/icanio-10155/.m2/repository/io/opentelemetry/opentelemetry-semconv/1.19.0-alpha/opentelemetry-semconv-1.19.0-alpha.jar:/home/icanio-10155/.m2/repository/io/ous/jtoml/2.0.0/jtoml-2.0.0.jar:/home/icanio-10155/.m2/repository/net/bytebuddy/byte-buddy/1.12.18/byte-buddy-1.12.18.jar:/home/icanio-10155/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/home/icanio-10155/.m2/repository/org/asynchttpclient/async-http-client/2.12.3/async-http-client-2.12.3.jar:/home/icanio-10155/.m2/repository/org/asynchttpclient/async-http-client-netty-utils/2.12.3/async-http-client-netty-utils-2.12.3.jar:/home/icanio-10155/.m2/repository/io/netty/netty-codec-socks/4.1.60.Final/netty-codec-socks-4.1.60.Final.jar:/home/icanio-10155/.m2/repository/io/netty/netty-handler-proxy/4.1.60.Final/netty-handler-proxy-4.1.60.Final.jar:/home/icanio-10155/.m2/repository/io/netty/netty-transport-native-epoll/4.1.60.Final/netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar:/home/icanio-10155/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.60.Final/netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar:/home/icanio-10155/.m2/repository/com/typesafe/netty/netty-reactive-streams/2.0.4/netty-reactive-streams-2.0.4.jar:/home/icanio-10155/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/home/icanio-10155/.m2/repository/org/seleniumhq/selenium/selenium-http/4.5.3/selenium-http-4.5.3.jar:/home/icanio-10155/.m2/repository/dev/failsafe/failsafe/3.3.0/failsafe-3.3.0.jar:/home/icanio-10155/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.5.3/selenium-safari-driver-4.5.3.jar:/home/icanio-10155/.m2/repository/org/seleniumhq/selenium/selenium-support/4.5.3/selenium-support-4.5.3.jar:/home/icanio-10155/.m2/repository/io/github/bonigarcia/webdrivermanager/5.3.0/webdrivermanager-5.3.0.jar:/home/icanio-10155/.m2/repository/com/google/code/gson/gson/2.9.1/gson-2.9.1.jar:/home/icanio-10155/.m2/repository/com/github/docker-java/docker-java/3.2.13/docker-java-3.2.13.jar:/home/icanio-10155/.m2/repository/com/github/docker-java/docker-java-core/3.2.13/docker-java-core-3.2.13.jar:/home/icanio-10155/.m2/repository/com/github/docker-java/docker-java-api/3.2.13/docker-java-api-3.2.13.jar:/home/icanio-10155/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.10.3/jackson-annotations-2.10.3.jar:/home/icanio-10155/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.10.3/jackson-databind-2.10.3.jar:/home/icanio-10155/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.10.3/jackson-core-2.10.3.jar:/home/icanio-10155/.m2/repository/org/bouncycastle/bcpkix-jdk15on/1.64/bcpkix-jdk15on-1.64.jar:/home/icanio-10155/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.64/bcprov-jdk15on-1.64.jar:/home/icanio-10155/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/home/icanio-10155/.m2/repository/com/github/docker-java/docker-java-transport-httpclient5/3.2.13/docker-java-transport-httpclient5-3.2.13.jar:/home/icanio-10155/.m2/repository/com/github/docker-java/docker-java-transport/3.2.13/docker-java-transport-3.2.13.jar:/home/icanio-10155/.m2/repository/net/java/dev/jna/jna/5.8.0/jna-5.8.0.jar:/home/icanio-10155/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/home/icanio-10155/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/home/icanio-10155/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.1.3/httpclient5-5.1.3.jar:/home/icanio-10155/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.1.3/httpcore5-5.1.3.jar:/home/icanio-10155/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.1.3/httpcore5-h2-5.1.3.jar:/home/icanio-10155/.m2/repository/commons-codec/commons-codec/1.15/commons-codec-1.15.jar:/home/icanio-10155/.m2/repository/org/testng/testng/7.6.1/testng-7.6.1.jar:/home/icanio-10155/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/home/icanio-10155/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/home/icanio-10155/.m2/repository/org/webjars/jquery/3.6.0/jquery-3.6.0.jar:/home/icanio-10155/.m2/repository/io/rest-assured/rest-assured/5.2.0/rest-assured-5.2.0.jar:/home/icanio-10155/.m2/repository/org/apache/groovy/groovy/4.0.1/groovy-4.0.1.jar:/home/icanio-10155/.m2/repository/org/apache/groovy/groovy-xml/4.0.1/groovy-xml-4.0.1.jar:/home/icanio-10155/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/home/icanio-10155/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/home/icanio-10155/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/icanio-10155/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/home/icanio-10155/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/home/icanio-10155/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/home/icanio-10155/.m2/repository/io/rest-assured/json-path/5.2.0/json-path-5.2.0.jar:/home/icanio-10155/.m2/repository/org/apache/groovy/groovy-json/4.0.1/groovy-json-4.0.1.jar:/home/icanio-10155/.m2/repository/io/rest-assured/rest-assured-common/5.2.0/rest-assured-common-5.2.0.jar:/home/icanio-10155/.m2/repository/io/rest-assured/xml-path/5.2.0/xml-path-5.2.0.jar:/home/icanio-10155/.m2/repository/com/jayway/jsonpath/json-path/2.7.0/json-path-2.7.0.jar:/home/icanio-10155/.m2/repository/net/minidev/json-smart/2.4.7/json-smart-2.4.7.jar:/home/icanio-10155/.m2/repository/net/minidev/accessors-smart/2.4.7/accessors-smart-2.4.7.jar:/home/icanio-10155/.m2/repository/org/ow2/asm/asm/9.1/asm-9.1.jar:/home/icanio-10155/.m2/repository/org/apache/poi/poi-ooxml/5.2.3/poi-ooxml-5.2.3.jar:/home/icanio-10155/.m2/repository/org/apache/poi/poi/5.2.3/poi-5.2.3.jar:/home/icanio-10155/.m2/repository/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar:/home/icanio-10155/.m2/repository/com/zaxxer/SparseBitSet/1.2/SparseBitSet-1.2.jar:/home/icanio-10155/.m2/repository/org/apache/poi/poi-ooxml-lite/5.2.3/poi-ooxml-lite-5.2.3.jar:/home/icanio-10155/.m2/repository/org/apache/xmlbeans/xmlbeans/5.1.1/xmlbeans-5.1.1.jar:/home/icanio-10155/.m2/repository/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar:/home/icanio-10155/.m2/repository/com/github/virtuald/curvesapi/1.07/curvesapi-1.07.jar:/home/icanio-10155/.m2/repository/org/apache/logging/log4j/log4j-api/2.18.0/log4j-api-2.18.0.jar:/home/icanio-10155/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/home/icanio-10155/.m2/repository/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar:/home/icanio-10155/.m2/repository/io/qameta/allure/allure-testng/2.19.0/allure-testng-2.19.0.jar:/home/icanio-10155/.m2/repository/io/qameta/allure/allure-java-commons/2.19.0/allure-java-commons-2.19.0.jar:/home/icanio-10155/.m2/repository/io/qameta/allure/allure-model/2.19.0/allure-model-2.19.0.jar:/home/icanio-10155/.m2/repository/io/qameta/allure/allure-test-filter/2.19.0/allure-test-filter-2.19.0.jar:/home/icanio-10155/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar:/home/icanio-10155/.m2/repository/io/reactivex/rxjava3/rxjava/3.0.4/rxjava-3.0.4.jar:/home/icanio-10155/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/home/icanio-10155/.m2/repository/org/freemarker/freemarker/2.3.30/freemarker-2.3.30.jar:/home/icanio-10155/.m2/repository/org/aspectj/aspectjweaver/1.9.9.1/aspectjweaver-1.9.9.1.jar:/home/icanio-10155/.m2/repository/org/slf4j/slf4j-api/2.0.3/slf4j-api-2.0.3.jar:/home/icanio-10155/.m2/repository/org/slf4j/slf4j-simple/2.0.3/slf4j-simple-2.0.3.jar:/home/icanio-10155/.m2/repository/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar:/home/icanio-10155/.m2/repository/org/projectlombok/lombok/1.18.24/lombok-1.18.24.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="allure.results.directory" value="target/allure-results"/>
+    <property name="user.home" value="/home/icanio-10155"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-04-15"/>
+    <property name="java.home" value="/usr/lib/jvm/java-17-openjdk-amd64"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/home/icanio-10155/app/DCM/Automation-Practice"/>
+    <property name="allure.link.tms.pattern" value="https://en.wikipedia.org/wiki/{}"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="defaultAdminUserEmail" value="admin@phptravels.com"/>
+    <property name="surefire.real.class.path" value="/home/icanio-10155/app/DCM/Automation-Practice/target/surefire/surefirebooter-20250524115342363_3.jar"/>
+    <property name="remote.execution.host" value="localhost"/>
+    <property name="restfulbooker.baseUri" value="https://restful-booker.herokuapp.com/"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="allure.link.mylink.pattern" value=""/>
+    <property name="java.runtime.version" value="17.0.15+6-Ubuntu-0ubuntu122.04"/>
+    <property name="user.name" value="icanio-10155"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="6.8.0-59-generic"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="phptravels.baseuri" value="https://www.phptravels.net/"/>
+    <property name="localRepository" value="/home/icanio-10155/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugs.launchpad.net/ubuntu/+source/openjdk-17"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="remote.execution.port" value="4444"/>
+    <property name="java.version" value="17.0.15"/>
+    <property name="user.dir" value="/home/icanio-10155/app/DCM/Automation-Practice"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="webdriver.wait" value="60"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/home/icanio-10155/oracle_client/instantclient_21_12::/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="java.vendor" value="Ubuntu"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vm.version" value="17.0.15+6-Ubuntu-0ubuntu122.04"/>
+    <property name="java.specification.maintenance.version" value="1"/>
+    <property name="width" value="1024"/>
+    <property name="execution.type" value="Local"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="setup" classname="examples.testng.TestNGAssertionsDemo" time="5.699">
+    <failure message="Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114&#10;Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome &#10;Host info: host: &apos;santhosh&apos;, ip: &apos;127.0.0.1&apos;&#10;Build info: version: &apos;4.5.3&apos;, revision: &apos;4b786a1e430&apos;&#10;System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.8.0-59-generic&apos;, java.version: &apos;17.0.15&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]" type="org.openqa.selenium.SessionNotCreatedException"><![CDATA[org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome 
+Host info: host: 'santhosh', ip: '127.0.0.1'
+Build info: version: '4.5.3', revision: '4b786a1e430'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-59-generic', java.version: '17.0.15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:144)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:102)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:242)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:157)
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:101)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:81)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:49)
+	at examples.testng.TestNGAssertionsDemo.setup(TestNGAssertionsDemo.java:21)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:643)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:632)
+	at org.testng.TestRunner.run(TestRunner.java:594)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:151)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:192)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:93)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]></failure>
+    <system-out><![CDATA[
+**********************************************
+Starting Test Suite; By Mahmoud ElSharkawy! *
+**********************************************
+
+
+============================================================================================
+Starting Configuration Method (Setup or Teardown): [beforeSuite]
+============================================================================================
+
+BeforeSuit will run Before All other annotations Only Once
+
+===========================================================================================
+Finished Configuration Method (Setup or Teardown): [beforeSuite]
+===========================================================================================
+
+
+**************************************************** Test: [Surefire test] Started ****************************************************
+
+
+============================================================================================
+Starting Configuration Method (Setup or Teardown): [beforeTest]
+============================================================================================
+
+BeforeTest will run Before Class Only Once
+
+===========================================================================================
+Finished Configuration Method (Setup or Teardown): [beforeTest]
+===========================================================================================
+
+
+============================================================================================
+Starting Configuration Method (Setup or Teardown): [setup]
+============================================================================================
+
+
+===========================================================================================
+Finished Configuration Method (Setup or Teardown): [setup]
+===========================================================================================
+
+]]></system-out>
+    <system-err><![CDATA[[main] ERROR io.github.bonigarcia.wdm.online.HttpClient - Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_133
+[main] WARN io.github.bonigarcia.wdm.versions.VersionDetector - Exception reading https://chromedriver.storage.googleapis.com/LATEST_RELEASE_133 to get latest version of chromedriver (Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_133)
+[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Reading https://chromedriver.storage.googleapis.com/ to seek chromedriver
+[main] INFO io.github.bonigarcia.wdm.online.Downloader - Downloading https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_linux64.zip
+[main] INFO io.github.bonigarcia.wdm.online.Downloader - Extracting driver from compressed file chromedriver_linux64.zip
+[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /home/icanio-10155/.cache/selenium/chromedriver/linux64/114.0.5735.90/chromedriver
+Starting ChromeDriver 114.0.5735.90 (386bc09e8f4f2e025eddae123f36f6263096ae49-refs/branch-heads/5735@{#1052}) on port 3304
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+]]></system-err>
+  </testcase>
+  <testcase name="getTitle" classname="examples.testng.TestNGAssertionsDemo" time="0">
+    <skipped message="Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114&#10;Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome &#10;Host info: host: &apos;santhosh&apos;, ip: &apos;127.0.0.1&apos;&#10;Build info: version: &apos;4.5.3&apos;, revision: &apos;4b786a1e430&apos;&#10;System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.8.0-59-generic&apos;, java.version: &apos;17.0.15&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]"/>
+    <system-out><![CDATA[
+============================================================================================
+Starting Test Case: [getTitle]
+============================================================================================
+
+
+===========================================================================================
+Finished Test Case: [getTitle]
+===========================================================================================
+
+]]></system-out>
+  </testcase>
+  <testcase name="getURL" classname="examples.testng.TestNGAssertionsDemo" time="0">
+    <skipped message="Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114&#10;Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome &#10;Host info: host: &apos;santhosh&apos;, ip: &apos;127.0.0.1&apos;&#10;Build info: version: &apos;4.5.3&apos;, revision: &apos;4b786a1e430&apos;&#10;System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.8.0-59-generic&apos;, java.version: &apos;17.0.15&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]"/>
+    <system-out><![CDATA[
+============================================================================================
+Starting Test Case: [getURL]
+============================================================================================
+
+
+===========================================================================================
+Finished Test Case: [getURL]
+===========================================================================================
+
+]]></system-out>
+  </testcase>
+  <testcase name="closeBrowser" classname="examples.testng.TestNGAssertionsDemo" time="0">
+    <skipped/>
+    <system-out><![CDATA[
+============================================================================================
+Starting Configuration Method (Setup or Teardown): [closeBrowser]
+============================================================================================
+
+
+===========================================================================================
+Finished Configuration Method (Setup or Teardown): [closeBrowser]
+===========================================================================================
+
+]]></system-out>
+  </testcase>
+  <testcase name="setup" classname="examples.testng.TestNGParametersDemo" time="0">
+    <skipped/>
+    <system-out><![CDATA[
+============================================================================================
+Starting Configuration Method (Setup or Teardown): [setup]
+============================================================================================
+
+
+===========================================================================================
+Finished Configuration Method (Setup or Teardown): [setup]
+===========================================================================================
+
+]]></system-out>
+  </testcase>
+  <testcase name="getURL" classname="examples.testng.TestNGParametersDemo" time="0">
+    <skipped message="Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114&#10;Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome &#10;Host info: host: &apos;santhosh&apos;, ip: &apos;127.0.0.1&apos;&#10;Build info: version: &apos;4.5.3&apos;, revision: &apos;4b786a1e430&apos;&#10;System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.8.0-59-generic&apos;, java.version: &apos;17.0.15&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]"/>
+    <system-out><![CDATA[
+============================================================================================
+Starting Test Case: [getURL]
+============================================================================================
+
+
+===========================================================================================
+Finished Test Case: [getURL]
+===========================================================================================
+
+]]></system-out>
+  </testcase>
+  <testcase name="getTitle" classname="examples.testng.TestNGParametersDemo" time="0">
+    <skipped message="Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114&#10;Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome &#10;Host info: host: &apos;santhosh&apos;, ip: &apos;127.0.0.1&apos;&#10;Build info: version: &apos;4.5.3&apos;, revision: &apos;4b786a1e430&apos;&#10;System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.8.0-59-generic&apos;, java.version: &apos;17.0.15&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]"/>
+    <system-out><![CDATA[
+============================================================================================
+Starting Test Case: [getTitle]
+============================================================================================
+
+
+===========================================================================================
+Finished Test Case: [getTitle]
+===========================================================================================
+
+]]></system-out>
+  </testcase>
+  <testcase name="failedCase" classname="examples.testng.TestNGParametersDemo" time="0">
+    <skipped message="Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114&#10;Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome &#10;Host info: host: &apos;santhosh&apos;, ip: &apos;127.0.0.1&apos;&#10;Build info: version: &apos;4.5.3&apos;, revision: &apos;4b786a1e430&apos;&#10;System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.8.0-59-generic&apos;, java.version: &apos;17.0.15&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]"/>
+    <system-out><![CDATA[
+============================================================================================
+Starting Test Case: [failedCase]
+============================================================================================
+
+
+===========================================================================================
+Finished Test Case: [failedCase]
+===========================================================================================
+
+]]></system-out>
+  </testcase>
+  <testcase name="skippedCase" classname="examples.testng.TestNGParametersDemo" time="0">
+    <skipped message="Method examples.testng.TestNGParametersDemo.skippedCase() on instance examples.testng.TestNGParametersDemo@4fcc0416 depends on not successfully finished methods &#10;[examples.testng.TestNGParametersDemo.failedCase() on instance examples.testng.TestNGParametersDemo@4fcc0416]"/>
+    <system-out><![CDATA[
+============================================================================================
+Starting Test Case: [skippedCase]
+============================================================================================
+
+
+===========================================================================================
+Finished Test Case: [skippedCase]
+===========================================================================================
+
+]]></system-out>
+  </testcase>
+  <testcase name="quitBrowser" classname="examples.testng.TestNGParametersDemo" time="0">
+    <skipped/>
+    <system-out><![CDATA[
+============================================================================================
+Starting Configuration Method (Setup or Teardown): [quitBrowser]
+============================================================================================
+
+
+===========================================================================================
+Finished Configuration Method (Setup or Teardown): [quitBrowser]
+===========================================================================================
+
+]]></system-out>
+  </testcase>
+  <testcase name="setup" classname="examples.testng.TestngXmlGroupsDemo" time="0">
+    <skipped/>
+    <system-out><![CDATA[
+============================================================================================
+Starting Configuration Method (Setup or Teardown): [setup]
+============================================================================================
+
+
+===========================================================================================
+Finished Configuration Method (Setup or Teardown): [setup]
+===========================================================================================
+
+]]></system-out>
+  </testcase>
+  <testcase name="getTitle" classname="examples.testng.TestngXmlGroupsDemo" time="0">
+    <skipped message="Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114&#10;Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome &#10;Host info: host: &apos;santhosh&apos;, ip: &apos;127.0.0.1&apos;&#10;Build info: version: &apos;4.5.3&apos;, revision: &apos;4b786a1e430&apos;&#10;System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.8.0-59-generic&apos;, java.version: &apos;17.0.15&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]"/>
+    <system-out><![CDATA[
+============================================================================================
+Starting Test Case: [getTitle]
+============================================================================================
+
+
+===========================================================================================
+Finished Test Case: [getTitle]
+===========================================================================================
+
+]]></system-out>
+  </testcase>
+  <testcase name="getURL" classname="examples.testng.TestngXmlGroupsDemo" time="0">
+    <skipped message="Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114&#10;Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome &#10;Host info: host: &apos;santhosh&apos;, ip: &apos;127.0.0.1&apos;&#10;Build info: version: &apos;4.5.3&apos;, revision: &apos;4b786a1e430&apos;&#10;System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.8.0-59-generic&apos;, java.version: &apos;17.0.15&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]"/>
+    <system-out><![CDATA[
+============================================================================================
+Starting Test Case: [getURL]
+============================================================================================
+
+
+===========================================================================================
+Finished Test Case: [getURL]
+===========================================================================================
+
+]]></system-out>
+  </testcase>
+  <testcase name="quit" classname="examples.testng.TestngXmlGroupsDemo" time="0">
+    <skipped/>
+    <system-out><![CDATA[
+============================================================================================
+Starting Configuration Method (Setup or Teardown): [quit]
+============================================================================================
+
+
+===========================================================================================
+Finished Configuration Method (Setup or Teardown): [quit]
+===========================================================================================
+
+]]></system-out>
+  </testcase>
+  <testcase name="classSetup" classname="phptravels.tests.SigninTests" time="0">
+    <skipped/>
+    <system-out><![CDATA[
+============================================================================================
+Starting Configuration Method (Setup or Teardown): [classSetup]
+============================================================================================
+
+
+===========================================================================================
+Finished Configuration Method (Setup or Teardown): [classSetup]
+===========================================================================================
+
+]]></system-out>
+  </testcase>
+  <testcase name="methodSetup" classname="phptravels.tests.SigninTests" time="0">
+    <skipped/>
+    <system-out><![CDATA[
+============================================================================================
+Starting Configuration Method (Setup or Teardown): [methodSetup]
+============================================================================================
+
+
+===========================================================================================
+Finished Configuration Method (Setup or Teardown): [methodSetup]
+===========================================================================================
+
+]]></system-out>
+  </testcase>
+  <testcase name="methodSetup" classname="phptravels.tests.SigninTests" time="0">
+    <skipped/>
+    <system-out><![CDATA[
+============================================================================================
+Starting Configuration Method (Setup or Teardown): [methodSetup]
+============================================================================================
+
+
+===========================================================================================
+Finished Configuration Method (Setup or Teardown): [methodSetup]
+===========================================================================================
+
+]]></system-out>
+  </testcase>
+  <testcase name="testingInvalidUserSignin" classname="phptravels.tests.SigninTests" time="0">
+    <skipped message="Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114&#10;Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome &#10;Host info: host: &apos;santhosh&apos;, ip: &apos;127.0.0.1&apos;&#10;Build info: version: &apos;4.5.3&apos;, revision: &apos;4b786a1e430&apos;&#10;System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.8.0-59-generic&apos;, java.version: &apos;17.0.15&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]"/>
+    <system-out><![CDATA[
+============================================================================================
+Starting Test Case: [testingInvalidUserSignin]
+============================================================================================
+
+
+===========================================================================================
+Finished Test Case: [testingInvalidUserSignin]
+===========================================================================================
+
+]]></system-out>
+  </testcase>
+  <testcase name="methodTearDown" classname="phptravels.tests.SigninTests" time="0">
+    <skipped/>
+    <system-out><![CDATA[
+============================================================================================
+Starting Configuration Method (Setup or Teardown): [methodTearDown]
+============================================================================================
+
+
+===========================================================================================
+Finished Configuration Method (Setup or Teardown): [methodTearDown]
+===========================================================================================
+
+]]></system-out>
+  </testcase>
+  <testcase name="methodTearDown" classname="phptravels.tests.SigninTests" time="0">
+    <skipped/>
+    <system-out><![CDATA[
+============================================================================================
+Starting Configuration Method (Setup or Teardown): [methodTearDown]
+============================================================================================
+
+
+===========================================================================================
+Finished Configuration Method (Setup or Teardown): [methodTearDown]
+===========================================================================================
+
+]]></system-out>
+  </testcase>
+  <testcase name="testingValidUserSignin" classname="phptravels.tests.SigninTests" time="0">
+    <skipped message="Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114&#10;Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome &#10;Host info: host: &apos;santhosh&apos;, ip: &apos;127.0.0.1&apos;&#10;Build info: version: &apos;4.5.3&apos;, revision: &apos;4b786a1e430&apos;&#10;System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.8.0-59-generic&apos;, java.version: &apos;17.0.15&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]"/>
+    <system-out><![CDATA[
+============================================================================================
+Starting Test Case: [testingValidUserSignin]
+============================================================================================
+
+
+===========================================================================================
+Finished Test Case: [testingValidUserSignin]
+===========================================================================================
+
+]]></system-out>
+  </testcase>
+  <testcase name="setup" classname="phptravels.tests.AdminUserTests" time="0">
+    <skipped/>
+    <system-out><![CDATA[
+============================================================================================
+Starting Configuration Method (Setup or Teardown): [setup]
+============================================================================================
+
+
+===========================================================================================
+Finished Configuration Method (Setup or Teardown): [setup]
+===========================================================================================
+
+]]></system-out>
+  </testcase>
+  <testcase name="createNewAdminUserWithLocationPermissions" classname="phptravels.tests.AdminUserTests" time="0">
+    <skipped message="Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114&#10;Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome &#10;Host info: host: &apos;santhosh&apos;, ip: &apos;127.0.0.1&apos;&#10;Build info: version: &apos;4.5.3&apos;, revision: &apos;4b786a1e430&apos;&#10;System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.8.0-59-generic&apos;, java.version: &apos;17.0.15&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]"/>
+    <system-out><![CDATA[
+============================================================================================
+Starting Test Case: [createNewAdminUserWithLocationPermissions]
+============================================================================================
+
+
+===========================================================================================
+Finished Test Case: [createNewAdminUserWithLocationPermissions]
+===========================================================================================
+
+]]></system-out>
+  </testcase>
+  <testcase name="addNewLocation" classname="phptravels.tests.AdminUserTests" time="0">
+    <skipped message="Method phptravels.tests.AdminUserTests.addNewLocation() on instance phptravels.tests.AdminUserTests@245a060f depends on not successfully finished methods &#10;[phptravels.tests.AdminUserTests.createNewAdminUserWithLocationPermissions() on instance phptravels.tests.AdminUserTests@245a060f]"/>
+    <system-out><![CDATA[
+============================================================================================
+Starting Test Case: [addNewLocation]
+============================================================================================
+
+
+===========================================================================================
+Finished Test Case: [addNewLocation]
+===========================================================================================
+
+]]></system-out>
+  </testcase>
+  <testcase name="updateLocation" classname="phptravels.tests.AdminUserTests" time="0">
+    <skipped message="Method phptravels.tests.AdminUserTests.updateLocation() on instance phptravels.tests.AdminUserTests@245a060f depends on not successfully finished methods &#10;[phptravels.tests.AdminUserTests.addNewLocation() on instance phptravels.tests.AdminUserTests@245a060f]"/>
+    <system-out><![CDATA[
+============================================================================================
+Starting Test Case: [updateLocation]
+============================================================================================
+
+
+===========================================================================================
+Finished Test Case: [updateLocation]
+===========================================================================================
+
+]]></system-out>
+  </testcase>
+  <testcase name="tearDown" classname="phptravels.tests.AdminUserTests" time="0">
+    <skipped/>
+    <system-out><![CDATA[
+============================================================================================
+Starting Configuration Method (Setup or Teardown): [tearDown]
+============================================================================================
+
+
+===========================================================================================
+Finished Configuration Method (Setup or Teardown): [tearDown]
+===========================================================================================
+
+]]></system-out>
+  </testcase>
+  <testcase name="classSetup" classname="phptravels.tests.SignupTests" time="0">
+    <skipped/>
+    <system-out><![CDATA[
+============================================================================================
+Starting Configuration Method (Setup or Teardown): [classSetup]
+============================================================================================
+
+
+===========================================================================================
+Finished Configuration Method (Setup or Teardown): [classSetup]
+===========================================================================================
+
+]]></system-out>
+  </testcase>
+  <testcase name="methodSetup" classname="phptravels.tests.SignupTests" time="0">
+    <skipped/>
+    <system-out><![CDATA[
+============================================================================================
+Starting Configuration Method (Setup or Teardown): [methodSetup]
+============================================================================================
+
+
+===========================================================================================
+Finished Configuration Method (Setup or Teardown): [methodSetup]
+===========================================================================================
+
+]]></system-out>
+  </testcase>
+  <testcase name="methodSetup" classname="phptravels.tests.SignupTests" time="0">
+    <skipped/>
+    <system-out><![CDATA[
+============================================================================================
+Starting Configuration Method (Setup or Teardown): [methodSetup]
+============================================================================================
+
+
+===========================================================================================
+Finished Configuration Method (Setup or Teardown): [methodSetup]
+===========================================================================================
+
+]]></system-out>
+  </testcase>
+  <testcase name="testingInvalidUserSignUp_emailWrongFormat" classname="phptravels.tests.SignupTests" time="0">
+    <skipped message="Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114&#10;Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome &#10;Host info: host: &apos;santhosh&apos;, ip: &apos;127.0.0.1&apos;&#10;Build info: version: &apos;4.5.3&apos;, revision: &apos;4b786a1e430&apos;&#10;System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.8.0-59-generic&apos;, java.version: &apos;17.0.15&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]"/>
+    <system-out><![CDATA[
+============================================================================================
+Starting Test Case: [testingInvalidUserSignUp_emailWrongFormat]
+============================================================================================
+
+
+===========================================================================================
+Finished Test Case: [testingInvalidUserSignUp_emailWrongFormat]
+===========================================================================================
+
+]]></system-out>
+  </testcase>
+  <testcase name="methodTearDown" classname="phptravels.tests.SignupTests" time="0">
+    <skipped/>
+    <system-out><![CDATA[
+============================================================================================
+Starting Configuration Method (Setup or Teardown): [methodTearDown]
+============================================================================================
+
+
+===========================================================================================
+Finished Configuration Method (Setup or Teardown): [methodTearDown]
+===========================================================================================
+
+]]></system-out>
+  </testcase>
+  <testcase name="methodTearDown" classname="phptravels.tests.SignupTests" time="0">
+    <skipped/>
+    <system-out><![CDATA[
+============================================================================================
+Starting Configuration Method (Setup or Teardown): [methodTearDown]
+============================================================================================
+
+
+===========================================================================================
+Finished Configuration Method (Setup or Teardown): [methodTearDown]
+===========================================================================================
+
+]]></system-out>
+  </testcase>
+  <testcase name="testingValidUserSignUp" classname="phptravels.tests.SignupTests" time="0">
+    <skipped message="Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114&#10;Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome &#10;Host info: host: &apos;santhosh&apos;, ip: &apos;127.0.0.1&apos;&#10;Build info: version: &apos;4.5.3&apos;, revision: &apos;4b786a1e430&apos;&#10;System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.8.0-59-generic&apos;, java.version: &apos;17.0.15&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]"/>
+    <system-out><![CDATA[
+============================================================================================
+Starting Test Case: [testingValidUserSignUp]
+============================================================================================
+
+
+===========================================================================================
+Finished Test Case: [testingValidUserSignUp]
+===========================================================================================
+
+]]></system-out>
+  </testcase>
+  <testcase name="testingInvalidUserSignUp_emailAlreadyExists" classname="phptravels.tests.SignupTests" time="0">
+    <skipped message="Method phptravels.tests.SignupTests.testingInvalidUserSignUp_emailAlreadyExists() on instance phptravels.tests.SignupTests@6edaa77a depends on not successfully finished methods &#10;[phptravels.tests.SignupTests.testingValidUserSignUp() on instance phptravels.tests.SignupTests@6edaa77a]"/>
+    <system-out><![CDATA[
+============================================================================================
+Starting Test Case: [testingInvalidUserSignUp_emailAlreadyExists]
+============================================================================================
+
+
+===========================================================================================
+Finished Test Case: [testingInvalidUserSignUp_emailAlreadyExists]
+===========================================================================================
+
+]]></system-out>
+  </testcase>
+  <testcase name="setup" classname="google.tests.GoogleSearchTest" time="0">
+    <skipped/>
+    <system-out><![CDATA[
+============================================================================================
+Starting Configuration Method (Setup or Teardown): [setup]
+============================================================================================
+
+
+===========================================================================================
+Finished Configuration Method (Setup or Teardown): [setup]
+===========================================================================================
+
+]]></system-out>
+  </testcase>
+  <testcase name="TestGoogleSearch" classname="google.tests.GoogleSearchTest" time="0">
+    <skipped message="Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114&#10;Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome &#10;Host info: host: &apos;santhosh&apos;, ip: &apos;127.0.0.1&apos;&#10;Build info: version: &apos;4.5.3&apos;, revision: &apos;4b786a1e430&apos;&#10;System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.8.0-59-generic&apos;, java.version: &apos;17.0.15&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]"/>
+    <system-out><![CDATA[
+============================================================================================
+Starting Test Case: [TestGoogleSearch]
+============================================================================================
+
+
+===========================================================================================
+Finished Test Case: [TestGoogleSearch]
+===========================================================================================
+
+]]></system-out>
+  </testcase>
+  <testcase name="quitWebDriver" classname="google.tests.GoogleSearchTest" time="0">
+    <skipped/>
+    <system-out><![CDATA[
+============================================================================================
+Starting Configuration Method (Setup or Teardown): [quitWebDriver]
+============================================================================================
+
+
+===========================================================================================
+Finished Configuration Method (Setup or Teardown): [quitWebDriver]
+===========================================================================================
+
+]]></system-out>
+  </testcase>
+  <testcase name="jsonPathFilterTest" classname="examples.restAssured.JsonPathFilterTest" time="0">
+    <skipped message="Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114&#10;Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome &#10;Host info: host: &apos;santhosh&apos;, ip: &apos;127.0.0.1&apos;&#10;Build info: version: &apos;4.5.3&apos;, revision: &apos;4b786a1e430&apos;&#10;System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.8.0-59-generic&apos;, java.version: &apos;17.0.15&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]"/>
+    <system-out><![CDATA[
+============================================================================================
+Starting Test Case: [jsonPathFilterTest]
+============================================================================================
+
+
+===========================================================================================
+Finished Test Case: [jsonPathFilterTest]
+===========================================================================================
+
+]]></system-out>
+  </testcase>
+  <testcase name="beforeClass" classname="examples.testng.TestNGAnnotationsDemo" time="0">
+    <skipped/>
+    <system-out><![CDATA[
+============================================================================================
+Starting Configuration Method (Setup or Teardown): [beforeClass]
+============================================================================================
+
+
+===========================================================================================
+Finished Configuration Method (Setup or Teardown): [beforeClass]
+===========================================================================================
+
+]]></system-out>
+  </testcase>
+  <testcase name="beforeMethod" classname="examples.testng.TestNGAnnotationsDemo" time="0">
+    <skipped/>
+    <system-out><![CDATA[
+============================================================================================
+Starting Configuration Method (Setup or Teardown): [beforeMethod]
+============================================================================================
+
+
+===========================================================================================
+Finished Configuration Method (Setup or Teardown): [beforeMethod]
+===========================================================================================
+
+]]></system-out>
+  </testcase>
+  <testcase name="beforeMethod" classname="examples.testng.TestNGAnnotationsDemo" time="0">
+    <skipped/>
+    <system-out><![CDATA[
+============================================================================================
+Starting Configuration Method (Setup or Teardown): [beforeMethod]
+============================================================================================
+
+
+===========================================================================================
+Finished Configuration Method (Setup or Teardown): [beforeMethod]
+===========================================================================================
+
+]]></system-out>
+  </testcase>
+  <testcase name="TC1" classname="examples.testng.TestNGAnnotationsDemo" time="0">
+    <skipped message="Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114&#10;Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome &#10;Host info: host: &apos;santhosh&apos;, ip: &apos;127.0.0.1&apos;&#10;Build info: version: &apos;4.5.3&apos;, revision: &apos;4b786a1e430&apos;&#10;System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.8.0-59-generic&apos;, java.version: &apos;17.0.15&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]"/>
+    <system-out><![CDATA[
+============================================================================================
+Starting Test Case: [TC1]
+============================================================================================
+
+
+===========================================================================================
+Finished Test Case: [TC1]
+===========================================================================================
+
+]]></system-out>
+  </testcase>
+  <testcase name="afterMethod" classname="examples.testng.TestNGAnnotationsDemo" time="0">
+    <skipped/>
+    <system-out><![CDATA[
+============================================================================================
+Starting Configuration Method (Setup or Teardown): [afterMethod]
+============================================================================================
+
+
+===========================================================================================
+Finished Configuration Method (Setup or Teardown): [afterMethod]
+===========================================================================================
+
+]]></system-out>
+  </testcase>
+  <testcase name="afterMethod" classname="examples.testng.TestNGAnnotationsDemo" time="0">
+    <skipped/>
+    <system-out><![CDATA[
+============================================================================================
+Starting Configuration Method (Setup or Teardown): [afterMethod]
+============================================================================================
+
+
+===========================================================================================
+Finished Configuration Method (Setup or Teardown): [afterMethod]
+===========================================================================================
+
+]]></system-out>
+  </testcase>
+  <testcase name="TC2" classname="examples.testng.TestNGAnnotationsDemo" time="0">
+    <skipped message="Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114&#10;Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome &#10;Host info: host: &apos;santhosh&apos;, ip: &apos;127.0.0.1&apos;&#10;Build info: version: &apos;4.5.3&apos;, revision: &apos;4b786a1e430&apos;&#10;System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.8.0-59-generic&apos;, java.version: &apos;17.0.15&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]"/>
+    <system-out><![CDATA[
+============================================================================================
+Starting Test Case: [TC2]
+============================================================================================
+
+
+===========================================================================================
+Finished Test Case: [TC2]
+===========================================================================================
+
+]]></system-out>
+  </testcase>
+  <testcase name="afterClass" classname="examples.testng.TestNGAnnotationsDemo" time="0">
+    <skipped/>
+    <system-out><![CDATA[
+============================================================================================
+Starting Configuration Method (Setup or Teardown): [afterClass]
+============================================================================================
+
+
+===========================================================================================
+Finished Configuration Method (Setup or Teardown): [afterClass]
+===========================================================================================
+
+]]></system-out>
+  </testcase>
+  <testcase name="afterTest" classname="examples.testng.TestNGAnnotationsDemo" time="0">
+    <skipped/>
+    <system-out><![CDATA[
+============================================================================================
+Starting Configuration Method (Setup or Teardown): [afterTest]
+============================================================================================
+
+
+===========================================================================================
+Finished Configuration Method (Setup or Teardown): [afterTest]
+===========================================================================================
+
+]]></system-out>
+  </testcase>
+  <testcase name="afterSuite" classname="examples.testng.TestNGAnnotationsDemo" time="0">
+    <skipped/>
+    <system-out><![CDATA[
+**************************************************** Test: [Surefire test] Finished ****************************************************
+
+
+============================================================================================
+Starting Configuration Method (Setup or Teardown): [afterSuite]
+============================================================================================
+
+
+===========================================================================================
+Finished Configuration Method (Setup or Teardown): [afterSuite]
+===========================================================================================
+
+]]></system-out>
+  </testcase>
+  <testcase name="beforeGroups1" classname="examples.testng.TestngGroups" time="0">
+    <skipped/>
+    <system-out><![CDATA[
+============================================================================================
+Starting Test Case: [beforeGroups1]
+============================================================================================
+
+
+===========================================================================================
+Finished Test Case: [beforeGroups1]
+===========================================================================================
+
+]]></system-out>
+  </testcase>
+  <testcase name="beforeMethod" classname="examples.testng.TestngGroups" time="0">
+    <skipped/>
+    <system-out><![CDATA[
+============================================================================================
+Starting Configuration Method (Setup or Teardown): [beforeMethod]
+============================================================================================
+
+
+===========================================================================================
+Finished Configuration Method (Setup or Teardown): [beforeMethod]
+===========================================================================================
+
+]]></system-out>
+  </testcase>
+  <testcase name="beforeMethod" classname="examples.testng.TestngGroups" time="0">
+    <skipped/>
+    <system-out><![CDATA[
+============================================================================================
+Starting Configuration Method (Setup or Teardown): [beforeMethod]
+============================================================================================
+
+
+===========================================================================================
+Finished Configuration Method (Setup or Teardown): [beforeMethod]
+===========================================================================================
+
+]]></system-out>
+  </testcase>
+  <testcase name="test1" classname="examples.testng.TestngGroups" time="0">
+    <skipped message="Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114&#10;Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome &#10;Host info: host: &apos;santhosh&apos;, ip: &apos;127.0.0.1&apos;&#10;Build info: version: &apos;4.5.3&apos;, revision: &apos;4b786a1e430&apos;&#10;System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.8.0-59-generic&apos;, java.version: &apos;17.0.15&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]"/>
+    <system-out><![CDATA[
+============================================================================================
+Starting Test Case: [test1]
+============================================================================================
+
+
+===========================================================================================
+Finished Test Case: [test1]
+===========================================================================================
+
+]]></system-out>
+  </testcase>
+  <testcase name="beforeGroups2" classname="examples.testng.TestngGroups" time="0">
+    <skipped/>
+    <system-out><![CDATA[
+============================================================================================
+Starting Test Case: [beforeGroups2]
+============================================================================================
+
+
+===========================================================================================
+Finished Test Case: [beforeGroups2]
+===========================================================================================
+
+]]></system-out>
+  </testcase>
+  <testcase name="test2" classname="examples.testng.TestngGroups" time="0">
+    <skipped message="Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114&#10;Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome &#10;Host info: host: &apos;santhosh&apos;, ip: &apos;127.0.0.1&apos;&#10;Build info: version: &apos;4.5.3&apos;, revision: &apos;4b786a1e430&apos;&#10;System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.8.0-59-generic&apos;, java.version: &apos;17.0.15&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]"/>
+    <system-out><![CDATA[
+============================================================================================
+Starting Test Case: [test2]
+============================================================================================
+
+
+===========================================================================================
+Finished Test Case: [test2]
+===========================================================================================
+
+]]></system-out>
+  </testcase>
+  <testcase name="test3" classname="examples.testng.TestngGroups" time="0">
+    <skipped message="Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114&#10;Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome &#10;Host info: host: &apos;santhosh&apos;, ip: &apos;127.0.0.1&apos;&#10;Build info: version: &apos;4.5.3&apos;, revision: &apos;4b786a1e430&apos;&#10;System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.8.0-59-generic&apos;, java.version: &apos;17.0.15&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]"/>
+    <system-out><![CDATA[
+============================================================================================
+Starting Test Case: [test3]
+============================================================================================
+
+
+===========================================================================================
+Finished Test Case: [test3]
+===========================================================================================
+
+]]></system-out>
+  </testcase>
+  <testcase name="afterGroups1" classname="examples.testng.TestngGroups" time="0">
+    <skipped/>
+    <system-out><![CDATA[
+============================================================================================
+Starting Test Case: [afterGroups1]
+============================================================================================
+
+
+===========================================================================================
+Finished Test Case: [afterGroups1]
+===========================================================================================
+
+]]></system-out>
+  </testcase>
+  <testcase name="test4" classname="examples.testng.TestngGroups" time="0">
+    <skipped message="Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114&#10;Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome &#10;Host info: host: &apos;santhosh&apos;, ip: &apos;127.0.0.1&apos;&#10;Build info: version: &apos;4.5.3&apos;, revision: &apos;4b786a1e430&apos;&#10;System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.8.0-59-generic&apos;, java.version: &apos;17.0.15&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]"/>
+    <system-out><![CDATA[
+============================================================================================
+Starting Test Case: [test4]
+============================================================================================
+
+
+===========================================================================================
+Finished Test Case: [test4]
+===========================================================================================
+
+]]></system-out>
+  </testcase>
+  <testcase name="afterGroups2" classname="examples.testng.TestngGroups" time="0">
+    <skipped/>
+    <system-out><![CDATA[
+============================================================================================
+Starting Test Case: [afterGroups2]
+============================================================================================
+
+
+===========================================================================================
+Finished Test Case: [afterGroups2]
+===========================================================================================
+
+]]></system-out>
+  </testcase>
+  <testcase name="beforeClass" classname="restfulbooker.tests.RestfulbookerTests" time="0">
+    <skipped/>
+    <system-out><![CDATA[
+============================================================================================
+Starting Configuration Method (Setup or Teardown): [beforeClass]
+============================================================================================
+
+
+===========================================================================================
+Finished Configuration Method (Setup or Teardown): [beforeClass]
+===========================================================================================
+
+]]></system-out>
+  </testcase>
+  <testcase name="createBooking" classname="restfulbooker.tests.RestfulbookerTests" time="0">
+    <skipped message="Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114&#10;Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome &#10;Host info: host: &apos;santhosh&apos;, ip: &apos;127.0.0.1&apos;&#10;Build info: version: &apos;4.5.3&apos;, revision: &apos;4b786a1e430&apos;&#10;System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.8.0-59-generic&apos;, java.version: &apos;17.0.15&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]"/>
+    <system-out><![CDATA[
+============================================================================================
+Starting Test Case: [createBooking]
+============================================================================================
+
+
+===========================================================================================
+Finished Test Case: [createBooking]
+===========================================================================================
+
+]]></system-out>
+  </testcase>
+  <testcase name="deleteBooking" classname="restfulbooker.tests.RestfulbookerTests" time="0">
+    <skipped message="Method restfulbooker.tests.RestfulbookerTests.deleteBooking() on instance restfulbooker.tests.RestfulbookerTests@bb095 depends on not successfully finished methods &#10;[restfulbooker.tests.RestfulbookerTests.createBooking() on instance restfulbooker.tests.RestfulbookerTests@bb095]"/>
+    <system-out><![CDATA[
+============================================================================================
+Starting Test Case: [deleteBooking]
+============================================================================================
+
+
+===========================================================================================
+Finished Test Case: [deleteBooking]
+===========================================================================================
+
+]]></system-out>
+  </testcase>
+  <testcase name="setup" classname="pom.fluent.GoogleSearchTest" time="0">
+    <skipped/>
+    <system-out><![CDATA[
+============================================================================================
+Starting Configuration Method (Setup or Teardown): [setup]
+============================================================================================
+
+
+===========================================================================================
+Finished Configuration Method (Setup or Teardown): [setup]
+===========================================================================================
+
+]]></system-out>
+  </testcase>
+  <testcase name="TestGoogleSearch" classname="pom.fluent.GoogleSearchTest" time="0">
+    <skipped message="Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114&#10;Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome &#10;Host info: host: &apos;santhosh&apos;, ip: &apos;127.0.0.1&apos;&#10;Build info: version: &apos;4.5.3&apos;, revision: &apos;4b786a1e430&apos;&#10;System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.8.0-59-generic&apos;, java.version: &apos;17.0.15&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]"/>
+    <system-out><![CDATA[
+============================================================================================
+Starting Test Case: [TestGoogleSearch]
+============================================================================================
+
+
+===========================================================================================
+Finished Test Case: [TestGoogleSearch]
+===========================================================================================
+
+]]></system-out>
+  </testcase>
+  <testcase name="quitWebDriver" classname="pom.fluent.GoogleSearchTest" time="0">
+    <skipped/>
+    <system-out><![CDATA[
+============================================================================================
+Starting Configuration Method (Setup or Teardown): [quitWebDriver]
+============================================================================================
+
+
+===========================================================================================
+Finished Configuration Method (Setup or Teardown): [quitWebDriver]
+===========================================================================================
+
+]]></system-out>
+  </testcase>
+  <testcase name="initWebDriver" classname="pom.basic.GoogleSearchTest" time="0">
+    <skipped/>
+    <system-out><![CDATA[
+============================================================================================
+Starting Configuration Method (Setup or Teardown): [initWebDriver]
+============================================================================================
+
+
+===========================================================================================
+Finished Configuration Method (Setup or Teardown): [initWebDriver]
+===========================================================================================
+
+]]></system-out>
+  </testcase>
+  <testcase name="TestGoogleSearch" classname="pom.basic.GoogleSearchTest" time="0">
+    <skipped message="Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114&#10;Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome &#10;Host info: host: &apos;santhosh&apos;, ip: &apos;127.0.0.1&apos;&#10;Build info: version: &apos;4.5.3&apos;, revision: &apos;4b786a1e430&apos;&#10;System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.8.0-59-generic&apos;, java.version: &apos;17.0.15&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]"/>
+    <system-out><![CDATA[
+============================================================================================
+Starting Test Case: [TestGoogleSearch]
+============================================================================================
+
+
+===========================================================================================
+Finished Test Case: [TestGoogleSearch]
+===========================================================================================
+
+]]></system-out>
+  </testcase>
+  <testcase name="quitWebDriver" classname="pom.basic.GoogleSearchTest" time="0">
+    <skipped/>
+    <system-out><![CDATA[
+============================================================================================
+Starting Configuration Method (Setup or Teardown): [quitWebDriver]
+============================================================================================
+
+
+===========================================================================================
+Finished Configuration Method (Setup or Teardown): [quitWebDriver]
+===========================================================================================
+
+]]></system-out>
+  </testcase>
+  <testcase name="beforeClass" classname="jsonPlaceholder.api.tests.JsonPlaceholderTests" time="0">
+    <skipped/>
+    <system-out><![CDATA[
+============================================================================================
+Starting Configuration Method (Setup or Teardown): [beforeClass]
+============================================================================================
+
+
+===========================================================================================
+Finished Configuration Method (Setup or Teardown): [beforeClass]
+===========================================================================================
+
+]]></system-out>
+  </testcase>
+  <testcase name="jsonPlaceholderUser" classname="jsonPlaceholder.api.tests.JsonPlaceholderTests" time="0">
+    <skipped message="Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114&#10;Current browser version is 133.0.6943.141 with binary path /usr/bin/google-chrome &#10;Host info: host: &apos;santhosh&apos;, ip: &apos;127.0.0.1&apos;&#10;Build info: version: &apos;4.5.3&apos;, revision: &apos;4b786a1e430&apos;&#10;System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.8.0-59-generic&apos;, java.version: &apos;17.0.15&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]"/>
+    <system-out><![CDATA[
+============================================================================================
+Starting Test Case: [jsonPlaceholderUser]
+============================================================================================
+
+
+===========================================================================================
+Finished Test Case: [jsonPlaceholderUser]
+===========================================================================================
+
+]]></system-out>
+  </testcase>
+</testsuite>
