@@ -44,4 +44,4 @@ jobs:
           curl -X POST \
             -H 'Content-Type: application/json' \
             -d "{\"text\": \"$message\"}" \
-            "https://chat.googleapis.com/v1/spaces/AAAA0q_7a84/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=2sgTj39blKJrS_pAKTiHPxXi08Z-LG0lHmma4I"
+            "https://chat.googleapis.com/v1/spaces/AAAA0q_7a84/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=2sgTj39vsGjHblKJrS_pAKTiHPxXi08Z-LG0lHmma4I"
