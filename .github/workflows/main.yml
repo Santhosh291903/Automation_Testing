@@ -66,8 +66,14 @@ jobs:
             -d "{\"text\": \"$message\"}" \
             "https://chat.googleapis.com/v1/spaces/AAAA0q_7a84/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=2sgTj39vsGjHblKJrS_pAKTiHPxXi08Z-LG0lHmma4I"
 
-      - name: Upload test output as artifact
+      - name: Get latest file in test-output/Reports
+        id: get_latest_report
+        run: |
+          latest_file=$(ls -t test-output/Reports/* | head -n1)
+          echo "latest_file=$latest_file" >> $GITHUB_OUTPUT
+
+      - name: Upload latest report file as artifact
         uses: actions/upload-artifact@v4
         with:
-          name: maven-test-output
-          path: mvn-output.txt
+          name: latest-report
+          path: ${{ steps.get_latest_report.outputs.latest_file }}
