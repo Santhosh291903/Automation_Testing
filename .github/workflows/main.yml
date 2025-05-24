@@ -18,11 +18,20 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
-      - name: Run Maven tests
-        run: mvn test
+      - name: Run Maven tests and capture output
+        run: |
+          mvn test | tee mvn-output.txt
 
-      - name: Archive test results
-        uses: actions/upload-artifact@v4
-        with:
-          name: test-results
-          path: target/surefire-reports
+      - name: Extract test failure line
+        id: extract_error
+        run: |
+          error_line=$(grep -i "Error:  Tests run:" mvn-output.txt || echo "No test error found")
+          echo "error_line=$error_line" >> $GITHUB_OUTPUT
+
+      - name: Send to Google Chat
+        if: ${{ steps.extract_error.outputs.error_line != 'No test error found' }}
+        run: |
+          curl -X POST \
+            -H 'Content-Type: application/json' \
+            -d "{\"text\": \"${{ steps.extract_error.outputs.error_line }}\"}" \
+            "https://chat.googleapis.com/v1/spaces/AAAA0q_7a84/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=2sgTj39blKJrS_pAKTiHPxXi08Z-LG0lHmma4I"
